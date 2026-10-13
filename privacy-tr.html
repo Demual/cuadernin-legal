@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik politikası · Cuadernín</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1d1a24; background: #faf8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2f2; background: #14111b; }
+    td, th { border-color: #352e44 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #542eb4; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #c8b5ff; } a { color: #c8b5ff; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #542eb4; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Gizlilik politikası</h1>
+<p class="fecha"><strong>Cuadernín</strong> uygulaması (<code>com.jrsoft.notascolores</code>) · Son güncelleme: 13 Ekim 2026</p>
+
+<div class="clave">
+<p><strong>Tek cümleyle:</strong> Cuadernín notlarını ve listelerini telefonunun içinde saklar. Hesap da kendi sunucumuz da yoktur; yazdıkların, sen paylaşmadıkça, yedeğini kaydetmedikçe ya da dışa aktarmadıkça telefondan çıkmaz. Bunun dışında yalnızca Google’ın reklam göstermek için topladığı, aşağıda açıklanan teknik ve reklamla ilgili veriler dışarı çıkar.</p>
+</div>
+
+<h2>Sorumlu kim</h2>
+<p>Veri sorumlusu, Cuadernín uygulamasının geliştiricisi <strong>Javier Román Sáez</strong>’in ticari adı olan <strong>JR Soft</strong>’tur. <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> adresinden iletişime geçebilirsin.</p>
+
+<h2>Bu uygulamanın YAPMADIKLARI</h2>
+<ul>
+  <li>Uygulamada kayıt, hesap, kullanıcı adı ya da şifre yoktur. Senden asla e-posta, telefon numarası, ad ya da konum istenmez.</li>
+  <li><strong>Notlarını hiçbir yere yüklemez.</strong> Notların, listelerin, fotoğrafların, etiketlerin ve hatırlatıcıların telefonunda saklanır. Bu uygulamanın kendi sunucuları yoktur: JR Soft yazdıklarından hiçbir şeyi asla almaz.</li>
+  <li>Uygulama, analiz ya da çökme raporlama araçları içermez (ne Google Analytics ne Firebase Analytics ne de Crashlytics) ve uygulamada ne yaptığını kaydetmez. Google’ın reklam SDK’sı ise aşağıda açıklanan kendi verilerini gönderir.</li>
+  <li>Veriler ticari amaçlarla üçüncü taraflara satılmaz, kiralanmaz ya da devredilmez.</li>
+  <li>Kamerayı, fotoğraflarını ve dosyalarını, kişilerini ya da konumunu kullanmak için izin istemez. Notlardaki fotoğraflar sistemin fotoğraf seçicisiyle seçilir ya da telefonun kamera uygulamasıyla çekilir; dosyalar ise Android’in kendi ekranlarıyla açılır ve kaydedilir, yalnızca senin seçtiklerin.</li>
+  <li>Notların, Android’in Google bulutundaki yedeğine dahil edilmez.</li>
+</ul>
+
+<h2>İzinler</h2>
+<ul>
+  <li><strong>Bildirimler</strong> (<code>POST_NOTIFICATIONS</code>) ve <strong>titreşim</strong>, hatırlatıcılarını sana bildirmek için. Android 13 veya sonraki sürümlerde bildirim izni, ilk hatırlatıcıyı kurduğunda istenir.</li>
+  <li><strong>Alarmlar ve hatırlatıcılar</strong> (<code>SCHEDULE_EXACT_ALARM</code>), hatırlatıcıların tam zamanında gelmesi için. Android 14 veya sonraki sürümlerde yalnızca bu izni <em>Ayarlar → Tam zamanında hatırlatma</em> bölümünden kendin verirsen; bu izin olmadan da hatırlatıcılar gelir, yalnızca birkaç dakikalık bir pay olabilir.</li>
+  <li><strong>Açılışta çalışma</strong> (<code>RECEIVE_BOOT_COMPLETED</code>), telefon yeniden başlatıldıktan ya da uygulama güncellendikten sonra hatırlatıcıları yeniden planlamak için.</li>
+  <li><strong>Parmak izi veya yüz tanıma</strong> (<code>USE_BIOMETRIC</code>), yalnızca uygulamayı ya da bir notu kilitlersen. Doğrulamayı Android, telefonun kendi parmak izi, yüz, PIN, desen ya da şifresiyle yapar: uygulama bunları asla almaz, yalnızca kilidin açılıp açılmadığını öğrenir.</li>
+  <li><strong>İnternet</strong>, <strong>ağ durumu</strong> ve <strong>reklam kimliği</strong> (<code>AD_ID</code> ve Android reklam hizmetlerinin izinleri); bunlar reklamlar için gereklidir (aşağıya bak). Notların bu izinler aracılığıyla dışarı çıkmaz.</li>
+</ul>
+
+<h2>Yalnızca telefonunda kalan veriler</h2>
+<p>Bu bilgiler uygulamanın özel depolama alanında (bir veritabanı ve bir fotoğraf klasörü) saklanır. Uygulamayı kaldırırsan, verilerini Android ayarlarından silersen ya da <em>Ayarlar → Tüm verilerimi sil</em> seçeneğini kullanırsan kaybolur.</p>
+<ul>
+  <li><strong>Notların ve listelerin</strong>: başlık, metin ve biçimi, liste öğeleri, renk, emoji, etiketler, tarihler ve sabitlenmiş, arşivlenmiş ya da kilitli olup olmadıkları.</li>
+  <li>Notlarına eklediğin <strong>fotoğraflar</strong>. Her birinin meta verileri (örneğin çekildiği yer) olmadan yeni bir kopyası kaydedilir.</li>
+  <li>Telefonun kendisinde planlanan <strong>hatırlatıcıların</strong> ve <strong>şablonların</strong>.</li>
+  <li><strong>Çöp kutusu</strong>: sildiklerin 30 gün saklanır, sonra silinir.</li>
+  <li>Ayarların: dil, tema, yazı boyutu, sıralama, kilit, otomatik yedeğin klasörü, her widget’ın ne gösterdiği ve diğer seçenekler.</li>
+  <li>Başka bir uygulamadan Cuadernín ile paylaştığın ya da içe aktarmak veya bir yedeği geri yüklemek için seçtiğin bir fotoğraf ya da dosya, okunabilmesi için uygulamanın geçici belleğine kopyalanır ve iş bitince bu kopya silinir.</li>
+</ul>
+<p>Hatırlatıcılar, widget’lar, kilit ve arama telefonun içinde, internet bağlantısı olmadan çalışır.</p>
+<p><strong>Android yedeklemesi.</strong> Uygulama, Android’in otomatik yedeklemesinin notlarını, fotoğraflarını ve ayarlarını Google bulutuna yüklemesine izin vermez. Ama telefon değiştirirken senin yaptığın doğrudan telefondan telefona aktarıma (Android 12 veya sonraki sürümlerde, kabloyla ya da yerel olarak) izin verir; böylece notlarını kaybetmezsin.</p>
+
+<h2>Paylaşmaya senin karar verdiklerin</h2>
+<ul>
+  <li><strong>Paylaşma.</strong> Bir not ya da fotoğraf yalnızca sen paylaştığında, Android ekranında seçtiğin uygulamayla telefondan çıkar.</li>
+  <li><strong>Yedek kaydetme.</strong> Tüm notların, fotoğraflarıyla birlikte, Android ekranında seçtiğin yere kaydedilen tek bir dosyada. Şifre koyarsan yedek şifrelenir (AES-256-GCM) ve şifre olmadan kimse açamaz: şifreyi unutursan onu kurtarmanın hiçbir yolu yoktur, bizim için bile. Yedeği bir bulutla (örneğin Google Drive) eşitlenen bir klasöre kaydedersen eşitlemeyi, seçtiğin hizmet kendi koşullarıyla yapar.</li>
+  <li><strong>Otomatik yedek.</strong> Açarsan, uygulamayı açtığında her gün ya da her hafta seçtiğin klasöre bir yedek kaydedilir. Bu yedekte şifre yoktur: o klasörü açabilen herkes okuyabilir. Son 7 yedek saklanır.</li>
+  <li><strong>Notları dışa aktarma.</strong> Her not, seçtiğin yere kaydedilen bir .zip dosyasının içinde ayrı bir .md ya da .txt dosyası olarak.</li>
+  <li><strong>Notları içe aktarma.</strong> Bir ColorNote yedeğini, bir Google Keep dışa aktarımını (Google Takeout) ya da .txt veya .md dosyalarını içe aktarırsan Cuadernín, seçtiğin ya da onunla paylaştığın dosyaları telefonunda okur, notları telefona kaydeder ve geçici kopyayı siler. ColorNote yedeğinin şifresi varsa yazdığın şifre yalnızca o anda yedeği açmak için kullanılır ve saklanmaz. Notlarını paylaştığın kişilerin verileri içe aktarılmaz. JR Soft’a ya da üçüncü taraflara hiçbir şey gönderilmez. ColorNote, Social &amp; Mobile, Inc.’in; Google Keep ise Google LLC’nin markasıdır; Cuadernín’in bu şirketlerle bir bağlantısı yoktur.</li>
+  <li><strong>Bize yaz.</strong> E-posta uygulamanı bize gönderilecek bir mesajla açar; mesaj yalnızca sen gönderirsen gider. Bize yazarsan e-posta adresini ve anlattıklarını alırız; bunları yalnızca sana yanıt vermek için kullanırız ve mesajı konu çözüldüğünde, en geç de aldıktan bir yıl sonra sileriz.</li>
+  <li><strong>Bağlantılar.</strong> Bir nota yazdığın bağlantı, yalnızca ona dokunduğunda tarayıcında açılır.</li>
+  <li><strong>Yazım ve klavye.</strong> “Yazım denetimi”, telefonun kendi yazım denetleyicisini kullanır. Yazdıkların, her uygulamada olduğu gibi klavyenden geçer: klavyenin yazma araçları varsa bunlar klavyeye aittir ve onun kendi koşullarına tabidir.</li>
+</ul>
+
+<h2>Telefondan çıkan veriler</h2>
+<p>Uygulama bunu <em>Ayarlar → Telefonundan neler çıkar</em> bölümünde özetler.</p>
+
+<h3>Reklamlar: Google AdMob</h3>
+<p>Uygulama ücretsizdir ve yalnızca not listesinde görünen (altta bir banner ve ara sıra notların arasında bir reklam), göze batmayan Google AdMob reklamlarıyla ayakta durur: yazarken, widget’larda ya da tam ekranda asla. Reklam isteklerinde notlarından hiçbir şey yer almaz: ne başlık ne metin ne de etiketler. Reklamlar, gençlere uygun içerikle (T derecelendirmesi) sınırlıdır.</p>
+<p>AdMob kullanan her uygulamada olduğu gibi Google SDK’sı; Android <strong>reklam kimliğini</strong> (bunu <em>Android Ayarları → Google → Reklamlar</em> bölümünden sıfırlayabilir ya da silebilirsin), uygulama grubu kimliğini (<em>app set ID</em>), IP adresini (bundan yaklaşık bir konum çıkarılır), uygulamayla ve reklamlarla etkileşimleri ve teşhis verilerini toplar. Google bunları kendi politikasına göre reklam göstermek ve ölçmek, istatistik ve dolandırıcılığı önlemek için kullanır.</p>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de uygulama, kişiselleştirilmiş reklam göstermeden önce Google’ın onay formunu gösterir. Tercihini istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştirebilirsin. Reddedersen kişiselleştirilmemiş reklamlar (depolama alanının kullanılmasını da kabul etmezsen kimlik kullanılmayan sınırlı reklamlar) görürsün ve uygulama tamamen aynı şekilde çalışır.</p>
+<p>Google’ın, hizmetlerini kullanan uygulamalardaki bilgileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Değerlendirmeler ve Google Play</h3>
+<p>Uygulama, zaman zaman güzel bir anın ardından (örneğin bir listeyi bitirdiğinde ya da bir yedek kaydettiğinde), Google’ın yönettiği resmî Google Play penceresiyle senden bir değerlendirme isteyebilir. “Uygulamayı değerlendir” ve “JR Soft'un diğer uygulamaları” Google Play’i açar; bu bağlantılarda yalnızca Cuadernín’den geldiklerini belirten bir kampanya parametresi bulunur, seninle ilgili hiçbir veri yoktur. Yalnızca ülkende bulunan uygulamaları göstermek için “JR Soft'un diğer uygulamaları”, SIM kartın ülkesine ya da sistem bölgesine telefonun içinde bakar; bu bilgi telefondan çıkmaz.</p>
+
+<h3>IP adresi</h3>
+<p>İnternete bağlanan her uygulamada olduğu gibi, adı geçen Google hizmetleri bağlantı sırasında IP adresini alır. Bu uygulamanın kendi sunucuları olmadığı için hiçbir türde kayıt tutmaz.</p>
+
+<h2>İlgili üçüncü taraflar</h2>
+<table>
+  <tr><th>Hizmet</th><th>Ne için</th><th>Politikası</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Reklamlar ve onay formu</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Değerlendirmeler ve diğer uygulamalara bağlantılar</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Seçtiğin uygulamalar</td>
+    <td>Yalnızca bir şeyi paylaştığında, kaydettiğinde, dışa ya da içe aktardığında veya gönderdiğinde (e-posta, bulut, tarayıcı)</td>
+    <td>Her uygulamanın kendi politikası</td>
+  </tr>
+</table>
+
+<h2>Uluslararası veri aktarımları</h2>
+<p>Google LLC bu verileri Amerika Birleşik Devletleri’nde ve başka ülkelerde işleyebilir. Google, <strong>AB-ABD Veri Gizliliği Çerçevesi</strong>’ne (Avrupa Komisyonu’nun 10 Temmuz 2023 tarihli yeterlilik kararı) katılmıştır ve gerektiğinde <strong>standart sözleşme maddelerini</strong> kullanır: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. İletişim e-postası da bir Google hizmetidir (Gmail).</p>
+
+<h2>Hukuki dayanak ve saklama</h2>
+<p><strong>Hukuki dayanak.</strong> Telefonunda işlenenler JR Soft’a ulaşmaz. Telefondan çıkanlar için: (1) AEA, Birleşik Krallık ve İsviçre’de kişiselleştirilmiş reklamlar ve cihaz depolama alanının reklam amacıyla kullanılması: Google formunda verdiğin ya da vermediğin ve <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri çekebileceğin <strong>onayın</strong> (GDPR md. 6.1.a ve LSSI-CE md. 22.2); (2) kişiselleştirilmemiş reklamlar, bunların ölçümü ve dolandırıcılığın önlenmesi: ücretsiz bir uygulamayı finanse etme ve dolandırıcılığa karşı koruma konusundaki <strong>meşru menfaat</strong> (GDPR md. 6.1.f); (3) bize yazarsan (örneğin “Bize yaz” ile): sana yanıt verme ve bildirdiğin konuyu çözme konusundaki <strong>meşru menfaat</strong> (GDPR md. 6.1.f). Google, AdMob verilerini kendi politikalarıyla <strong>bağımsız veri sorumlusu</strong> olarak işler.</p>
+<p>Telefonunda saklanan veriler, sen onları silene, uygulamayı kaldırana ya da uygulamanın verilerini silene kadar kalır. Uygulamanın dışına kaydettiğin yedekler, sen silene kadar koyduğun yerde kalır. Bu uygulama, bize gönderdiğin mesajlar dışında telefonunun dışında hiçbir veri saklamaz (bu mesajlar konu çözüldüğünde, en geç de alındıktan bir yıl sonra silinir); Google ise kendi verilerini kendi politikalarına göre saklar.</p>
+
+<h2>Hakların</h2>
+<p>Avrupa Birliği’nde yaşıyorsan GDPR sana erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarını tanır. Pratikte bu uygulama, bize gönderdiğin mesajlar dışında telefonun dışında hiçbir verini saklamaz (bunlar için iletişim adresine yaz); AdMob verilerini Google işler ve bu verilerle ilgili haklarını Google’a karşı kullanabilirsin (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Telefonunda olanlar için:</p>
+<ul>
+  <li><strong>Erişim ve taşınabilirlik:</strong> notlarını paylaş, .md ya da .txt olarak dışa aktar veya <em>Ayarlar</em> bölümünden tüm notlarının yedeğini kaydet.</li>
+  <li><strong>Düzeltme:</strong> notlarını uygulamanın içinde düzelt.</li>
+  <li><strong>Silme:</strong> bir notu sil, çöp kutusunu boşalt ya da <em>Ayarlar → Tüm verilerimi sil</em> seçeneğini kullan; uygulamayı da kaldırabilirsin. Uygulamanın dışına kaydettiğin yedekler senindir: onları kaydettiğin yerden sil. Kimseden bir şey istemene gerek yok.</li>
+  <li><strong>İtiraz ve onayın geri çekilmesi:</strong> reklam tercihini <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştir.</li>
+</ul>
+<p>İletişim adresine yazabilir ya da kendi ülkendeki denetim makamına şikâyette bulunabilirsin. İspanya’da bu makam <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>’tur (İspanya Veri Koruma Ajansı).</p>
+
+<h2>Çocuklar</h2>
+<p>Cuadernín, yetişkinler ve gençler için genel kullanıma yönelik bir uygulamadır; çocuklara yönelik değildir. Reklamlar, gençlere uygun içerikle (T derecelendirmesi) sınırlıdır. Çocuklardan bilerek veri toplamayız; AdMob’un gönderdiği veriler yukarıda açıklananlardır. Ülkende onay vermek için gereken yaşın altındaysan (İspanya’da 14), reklam formundaki seçimi annenle, babanla ya da vasinle birlikte yap.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika önemli ölçüde değişirse yeni sürüm, farklı bir güncelleme tarihiyle aynı adreste yayımlanır.</p>
+
+<h2>Açık kaynak lisansları</h2>
+<p>Cuadernín; Flutter, drift ve SQLite gibi açık kaynaklı kütüphaneler kullanır. Lisanslarıyla birlikte liste <a href="licencias.html">licencias.html</a> sayfasında ve uygulamada bulunur: <em>Ayarlar → Açık kaynak lisansları</em>.</p>
+
+<footer>
+<p>Cuadernín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.notascolores</code> · İletişim: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

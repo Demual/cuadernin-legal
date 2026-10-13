@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Cuadernín</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1d1a24; background: #faf8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2f2; background: #14111b; }
+    td, th { border-color: #352e44 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #542eb4; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #c8b5ff; } a { color: #c8b5ff; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #542eb4; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<p class="fecha">应用 <strong>Cuadernín</strong>（<code>com.jrsoft.notascolores</code>）· 最后更新：2026年10月13日</p>
+
+<div class="clave">
+<p><strong>一句话概括：</strong>Cuadernín 把你的笔记和清单保存在你的手机里。没有账号，也没有自己的服务器；除非你自己分享、保存备份或导出，你写下的内容都不会离开手机。除此之外，发送出去的只有 Google 为投放广告而收集的技术数据和广告数据，详见下文。</p>
+</div>
+
+<h2>数据控制者</h2>
+<p>数据控制者是 Cuadernín 应用的开发者 <strong>JR Soft</strong>（<strong>Javier Román Sáez</strong> 的商号）。联系方式：<strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>。</p>
+
+<h2>本应用不会做的事</h2>
+<ul>
+  <li>本应用没有注册、账号、用户名或密码。绝不会要求你提供邮箱、电话、姓名或位置。</li>
+  <li><strong>不会上传你的笔记。</strong>你的笔记、清单、照片、标签和提醒都保存在你的手机上。本应用没有自己的服务器：JR Soft 永远不会收到你写下的任何内容。</li>
+  <li>本应用不包含分析或崩溃报告工具（没有 Google Analytics，没有 Firebase Analytics，也没有 Crashlytics），也不会记录你在应用中的操作。Google 的广告 SDK 确实会发送其自身的数据，详见下文。</li>
+  <li>不会出于商业目的向第三方出售、出租或转让数据。</li>
+  <li>不申请相机、照片和文件、通讯录或位置权限。笔记中的照片通过系统的照片选择器选取，或用手机的相机应用拍摄；文件通过 Android 自带的界面打开和保存，且仅限你选择的文件。</li>
+  <li>你的笔记不会包含在保存到 Google 云端的 Android 备份中。</li>
+</ul>
+
+<h2>权限</h2>
+<ul>
+  <li><strong>通知</strong>（<code>POST_NOTIFICATIONS</code>）和<strong>振动</strong>，用于提醒你。在 Android 13 或更高版本上，会在你设置第一个提醒时请求通知权限。</li>
+  <li><strong>闹钟和提醒</strong>（<code>SCHEDULE_EXACT_ALARM</code>），让提醒准时送达。在 Android 14 或更高版本上，只有在你自己通过<em>设置 → 准时提醒</em>授予时才会使用；没有这项权限，提醒照样会送达，只是可能有几分钟的偏差。</li>
+  <li><strong>开机启动</strong>（<code>RECEIVE_BOOT_COMPLETED</code>），用于在手机重启或应用更新后重新安排提醒。</li>
+  <li><strong>指纹或人脸识别</strong>（<code>USE_BIOMETRIC</code>），仅在你锁定应用或某条笔记时使用。验证由 Android 完成，使用的是手机本身的指纹、面容或 PIN 码、图案、密码：应用永远不会收到这些信息，只会知道是否已解锁。</li>
+  <li><strong>互联网</strong>、<strong>网络状态</strong>和<strong>广告 ID</strong>（<code>AD_ID</code> 以及 Android 广告服务的相关权限），供广告使用（见下文）。你的笔记不会经由这些权限发送出去。</li>
+</ul>
+
+<h2>只保留在你手机上的数据</h2>
+<p>以下信息保存在应用的私有存储空间中（一个数据库和一个照片文件夹）。卸载应用、在 Android 设置中清除应用数据，或使用<em>设置 → 删除我的所有数据</em>后，这些信息就会消失。</p>
+<ul>
+  <li>你的<strong>笔记和清单</strong>：标题、文字及其格式、清单项目、颜色、表情符号、标签、日期，以及是否置顶、归档或锁定。</li>
+  <li>你添加到笔记中的<strong>照片</strong>。每张照片都会保存一份新副本，不含其元数据（例如拍摄地点）。</li>
+  <li>你的<strong>提醒</strong>（在手机本地安排）和你的<strong>模板</strong>。</li>
+  <li><strong>回收站</strong>：删除的内容会保留 30 天，之后彻底删除。</li>
+  <li>你的设置：语言、主题、文字大小、排序、锁定、自动备份文件夹、每个小部件显示的内容及其他选项。</li>
+  <li>你从其他应用分享给 Cuadernín 的照片或文件，或你选择用于导入或恢复备份的文件，会复制到应用的临时存储中以便读取，完成后即删除该副本。</li>
+</ul>
+<p>提醒、小部件、锁定和搜索都在手机内运行，无需联网。</p>
+<p><strong>Android 备份。</strong>本应用不允许 Android 自动备份把你的笔记、照片和设置上传到 Google 云端。但允许你在换手机时自行进行的设备间直接迁移（通过数据线或本地连接，适用于 Android 12 或更高版本），这样你的笔记就不会丢失。</p>
+
+<h2>由你决定分享的内容</h2>
+<ul>
+  <li><strong>分享。</strong>只有当你在 Android 界面中选择某个应用进行分享时，笔记或照片才会离开手机。</li>
+  <li><strong>保存备份。</strong>你的所有笔记连同照片保存为一个文件，存放在你通过 Android 界面选择的位置。如果设置了密码，备份会加密（AES-256-GCM），没有密码谁都无法打开：一旦忘记密码，就无法恢复，我们也无能为力。如果你把它保存在与云端同步的文件夹中（例如 Google 云端硬盘），同步由你选择的服务按其条款进行。</li>
+  <li><strong>自动备份。</strong>开启后，每天或每周在你打开应用时，会在你选择的文件夹中保存一份备份。自动备份没有密码：任何能打开该文件夹的人都能读取。只保留最近 7 份。</li>
+  <li><strong>导出笔记。</strong>每条笔记保存为一个 .md 或 .txt 文件，打包在一个 .zip 中，存放在你选择的位置。</li>
+  <li><strong>导入笔记。</strong>如果你导入 ColorNote 的备份、Google Keep 的导出文件（Google Takeout）或 .txt、.md 文件，Cuadernín 会在你的手机上读取你选择或分享给它的文件，把笔记保存在手机上，并删除临时副本。如果 ColorNote 的备份设有密码，你输入的密码仅在当时用于打开备份，不会被保存。不会导入你曾与之共享笔记的人的数据。不会向 JR Soft 或任何第三方发送任何内容。ColorNote 是 Social &amp; Mobile, Inc. 的商标，Google Keep 是 Google LLC 的商标；Cuadernín 与它们没有任何关联。</li>
+  <li><strong>联系我们。</strong>会打开你的邮件应用，并生成一封发给我们的邮件，只有你亲自发送才会发出。如果你给我们写信，我们会收到你的邮箱地址和你告诉我们的内容；我们仅将其用于回复你，并会在事情解决后删除这封邮件，最迟在收到后一年内删除。</li>
+  <li><strong>链接。</strong>你在笔记中写下的链接，只有在你点按时才会在浏览器中打开。</li>
+  <li><strong>拼写和键盘。</strong>“检查拼写”使用手机自带的拼写检查器。你输入的内容会经过你的键盘，与在任何应用中一样：如果你的键盘带有写作工具，这些工具属于键盘，并遵循键盘自身的条款。</li>
+</ul>
+
+<h2>会离开手机的数据</h2>
+<p>应用在<em>设置 → 哪些数据会离开你的手机</em>中对此作了概括。</p>
+
+<h3>广告：Google AdMob</h3>
+<p>本应用免费，依靠 Google AdMob 的低调广告维持运营。广告只出现在笔记列表中（底部的一条横幅，偶尔在笔记之间出现一条广告）：绝不会在你书写时、在小部件中出现，也没有全屏广告。广告请求中不包含你笔记中的任何内容：既没有标题，也没有正文或标签。广告仅限适合青少年的内容（T 级）。</p>
+<p>与所有使用 AdMob 的应用一样，Google 的 SDK 会收集 Android <strong>广告 ID</strong>（你可以在 <em>Android 设置 → Google → 广告</em>中重置或删除）、应用组 ID（<em>app set ID</em>）、你的 IP 地址（可据此推断大致位置）、与应用和广告的互动以及诊断数据。Google 根据其自身政策，将这些数据用于投放和衡量广告、统计分析和防范欺诈。</p>
+<p>在欧洲经济区、英国和瑞士，本应用会在投放个性化广告之前显示 Google 的同意表单。你可以随时在<em>设置 → 广告隐私设置</em>中更改你的选择。如果拒绝，你会看到非个性化广告（如果你也不同意使用存储空间，则会看到不使用标识符的受限广告），应用的功能完全不受影响。</p>
+<p>Google 如何使用来自采用其服务的应用的信息：<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>。</p>
+
+<h3>评分和 Google Play</h3>
+<p>在一些顺利的时刻之后（例如完成一个清单或保存备份时），应用偶尔可能会通过 Google Play 的官方窗口请你评分，该窗口由 Google 管理。“给应用评分”和“JR Soft 的更多应用”会打开 Google Play；其中的链接带有一个推广活动参数，只表明来自 Cuadernín，不含你的任何数据。为了只向你展示在你所在国家/地区可用的应用，“JR Soft 的更多应用”会在手机上读取 SIM 卡所属国家或系统地区；这项信息不会离开手机。</p>
+
+<h3>IP 地址</h3>
+<p>与任何联网的应用一样，上述 Google 服务在连接时会收到你的 IP 地址。本应用没有自己的服务器，因此不保存任何形式的日志。</p>
+
+<h2>涉及的第三方</h2>
+<table>
+  <tr><th>服务</th><th>用途</th><th>其隐私政策</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>广告和同意表单</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>评分及指向其他应用的链接</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>你选择的应用</td>
+    <td>仅在你分享、保存、导出、导入或发送内容时（邮件、云端、浏览器）</td>
+    <td>各应用自己的政策</td>
+  </tr>
+</table>
+
+<h2>国际数据传输</h2>
+<p>Google LLC 可能会在美国和其他国家/地区处理这些数据。Google 已加入<strong>欧盟-美国数据隐私框架</strong>（欧盟委员会于2023年7月10日作出的充分性决定），并在需要时采用<strong>标准合同条款</strong>：<a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>。联系邮箱同样是 Google 的服务（Gmail）。</p>
+
+<h2>法律依据和保留期限</h2>
+<p><strong>法律依据。</strong>在你手机上处理的内容不会到达 JR Soft。对于确实离开手机的数据：(1) 在欧洲经济区、英国和瑞士的个性化广告，以及出于广告目的使用设备存储空间：依据你的<strong>同意</strong>，你在 Google 的表单中给予或拒绝同意，并可在<em>设置 → 广告隐私设置</em>中撤回（GDPR 第 6 条第 1 款 (a) 项和 LSSI-CE 第 22 条第 2 款）；(2) 非个性化广告及其效果衡量和防范欺诈：依据为免费应用提供资金并保护其免受欺诈的<strong>正当利益</strong>（GDPR 第 6 条第 1 款 (f) 项）；(3) 如果你写信给我们（例如通过“联系我们”）：依据回复你并解决你所反映问题的<strong>正当利益</strong>（GDPR 第 6 条第 1 款 (f) 项）。Google 作为<strong>独立的数据控制者</strong>，按其自身政策处理 AdMob 的数据。</p>
+<p>保存在手机上的数据会一直保留，直到你删除它们、卸载应用或清除应用数据。你保存在应用之外的备份会留在你存放的位置，直到你自己删除。除你发给我们的消息（事情解决后即删除，最迟在收到后一年内删除）外，本应用不会在你的手机之外保留任何数据；Google 按其政策保留其收集的数据。</p>
+
+<h2>你的权利</h2>
+<p>如果你居住在欧盟，《通用数据保护条例》（GDPR）赋予你访问、更正、删除、限制处理、数据可携和反对的权利。实际上，除你发给我们的消息外（关于这些消息，请写信到联系邮箱），本应用不会在你的手机之外保存你的任何数据；AdMob 的数据由 Google 处理，你可以向 Google 行使你的权利（<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>）。对于你手机上的内容：</p>
+<ul>
+  <li><strong>访问和数据可携：</strong>分享你的笔记，将其导出为 .md 或 .txt，或在<em>设置</em>中保存所有笔记的备份。</li>
+  <li><strong>更正：</strong>在应用中直接修改你的笔记。</li>
+  <li><strong>删除：</strong>删除笔记、清空回收站或使用<em>设置 → 删除我的所有数据</em>；也可以卸载应用。你保存在应用之外的备份归你所有：请在保存它们的地方删除。无需向任何人提出申请。</li>
+  <li><strong>反对和撤回同意：</strong>在<em>设置 → 广告隐私设置</em>中更改你的广告选择。</li>
+</ul>
+<p>你也可以写信到上述联系邮箱，或向你所在国家的监管机构投诉。在西班牙，监管机构是<a href="https://www.aepd.es">西班牙数据保护局（AEPD）</a>。</p>
+
+<h2>未成年人</h2>
+<p>Cuadernín 是一款通用应用，面向成年人和青少年，并非面向儿童。广告仅限适合青少年的内容（T 级）。我们不会故意收集儿童的数据；AdMob 发送的数据即上文所述的数据。如果你未满你所在国家/地区规定的可自行表示同意的年龄（在西班牙为 14 岁），请让你的父母或监护人和你一起在广告表单中作出选择。</p>
+
+<h2>本政策的变更</h2>
+<p>如果本政策发生实质性变更，新版本将在同一地址发布，并注明新的更新日期。</p>
+
+<h2>开源许可</h2>
+<p>Cuadernín 使用了 Flutter、drift 和 SQLite 等开源库。许可列表见 <a href="licencias.html">licencias.html</a>，也可在应用的<em>设置 → 开源许可</em>中查看。</p>
+
+<footer>
+<p>Cuadernín · JR Soft（Javier Román Sáez）· <code>com.jrsoft.notascolores</code> · 联系方式：<strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

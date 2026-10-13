@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativa sulla privacy · Cuadernín</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1d1a24; background: #faf8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2f2; background: #14111b; }
+    td, th { border-color: #352e44 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #542eb4; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #c8b5ff; } a { color: #c8b5ff; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #542eb4; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Informativa sulla privacy</h1>
+<p class="fecha">App <strong>Cuadernín</strong> (<code>com.jrsoft.notascolores</code>) · Ultimo aggiornamento: 13 ottobre 2026</p>
+
+<div class="clave">
+<p><strong>In una frase:</strong> Cuadernín conserva le tue note e le tue liste dentro il tuo telefono. Non ci sono account né server propri, e quello che scrivi non esce dal telefono, tranne quando lo condividi, salvi un backup o lo esporti. A parte questo, escono solo i dati tecnici e pubblicitari che Google raccoglie per erogare gli annunci, spiegati più sotto.</p>
+</div>
+
+<h2>Titolare del trattamento</h2>
+<p>Il titolare del trattamento è <strong>JR Soft</strong>, nome commerciale di <strong>Javier Román Sáez</strong>, sviluppatore dell'app Cuadernín. Puoi scrivere a <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Cosa questa app NON fa</h2>
+<ul>
+  <li>Non c'è registrazione, account, nome utente né password dell'app. Non ti viene mai chiesto un indirizzo email, un numero di telefono, un nome né la tua posizione.</li>
+  <li><strong>Non carica online le tue note.</strong> Le tue note, liste, foto, etichette e promemoria vengono salvati sul tuo telefono. Questa app non ha server propri: JR Soft non riceve mai nulla di ciò che scrivi.</li>
+  <li>L'app non include strumenti di analisi né di segnalazione degli arresti anomali (né Google Analytics, né Firebase Analytics, né Crashlytics) e non registra ciò che fai al suo interno. L'SDK pubblicitario di Google invece invia i propri dati, spiegati più sotto.</li>
+  <li>Nessun dato viene venduto, affittato o ceduto a terzi a fini commerciali.</li>
+  <li>Non chiede l'autorizzazione per usare la fotocamera, le tue foto e i tuoi file, i tuoi contatti né la tua posizione. Le foto delle note si scelgono con il selettore di foto del sistema o si scattano con l'app fotocamera del telefono, e i file si aprono e si salvano con le schermate di Android stesso, solo quelli che scegli.</li>
+  <li>Le tue note non vengono incluse nel backup di Android sul cloud di Google.</li>
+</ul>
+
+<h2>Autorizzazioni</h2>
+<ul>
+  <li><strong>Notifiche</strong> (<code>POST_NOTIFICATIONS</code>) e <strong>vibrazione</strong>, per avvisarti dei tuoi promemoria. Su Android 13 o versioni successive, l'autorizzazione per le notifiche viene chiesta quando imposti il primo promemoria.</li>
+  <li><strong>Sveglie e promemoria</strong> (<code>SCHEDULE_EXACT_ALARM</code>), perché i promemoria arrivino all'ora esatta. Su Android 14 o versioni successive, solo se la concedi tu da <em>Opzioni → Promemoria all’ora esatta</em>; senza, i promemoria arrivano lo stesso, con qualche minuto di margine.</li>
+  <li><strong>Avvio all'accensione</strong> (<code>RECEIVE_BOOT_COMPLETED</code>), per riprogrammare i promemoria dopo il riavvio del telefono o un aggiornamento dell'app.</li>
+  <li><strong>Impronta digitale o riconoscimento del volto</strong> (<code>USE_BIOMETRIC</code>), solo se blocchi l'app o una nota. Il controllo lo fa Android, con l'impronta, il volto o il PIN, la sequenza o la password del telefono stesso: l'app non li riceve mai, sa solo se lo sblocco è avvenuto o no.</li>
+  <li><strong>Internet</strong>, <strong>stato della rete</strong> e <strong>ID pubblicità</strong> (<code>AD_ID</code> e le autorizzazioni dei servizi pubblicitari di Android), necessari per la pubblicità (vedi più sotto). Le tue note non passano da qui.</li>
+</ul>
+
+<h2>Dati che restano solo sul tuo telefono</h2>
+<p>Queste informazioni sono conservate nella memoria privata dell'app (un database e una cartella di foto). Spariscono se disinstalli l'app, se ne cancelli i dati dalle impostazioni di Android o se usi <em>Opzioni → Elimina tutti i miei dati</em>.</p>
+<ul>
+  <li>Le tue <strong>note e liste</strong>: il titolo, il testo e la sua formattazione, gli elementi delle liste, il colore, l'emoji, le etichette, le date e se sono fissate in alto, archiviate o bloccate.</li>
+  <li>Le <strong>foto</strong> che aggiungi alle note. Di ognuna viene salvata una nuova copia, senza i suoi metadati (per esempio, il luogo in cui è stata scattata).</li>
+  <li>I tuoi <strong>promemoria</strong>, programmati sul telefono stesso, e i tuoi <strong>modelli</strong>.</li>
+  <li>Il <strong>cestino</strong>: ciò che elimini resta lì 30 giorni e poi viene cancellato.</li>
+  <li>Le tue impostazioni: lingua, tema, dimensione del testo, ordinamento, blocco, la cartella del backup automatico, ciò che mostra ogni widget e tutte le altre opzioni.</li>
+  <li>Una foto o un file che condividi con Cuadernín da un'altra app, o che scegli per importarlo o per ripristinare un backup, viene copiato nella memoria temporanea dell'app per leggerlo, e quella copia viene cancellata alla fine.</li>
+</ul>
+<p>I promemoria, i widget, il blocco e la ricerca funzionano dentro il telefono, offline.</p>
+<p><strong>Backup di Android.</strong> L'app non permette al backup automatico di Android di caricare sul cloud di Google le tue note, le tue foto né le tue impostazioni. Permette invece il trasferimento diretto da un telefono all'altro che fai tu quando cambi telefono (via cavo o in locale, su Android 12 o versioni successive), così non perdi le tue note.</p>
+
+<h2>Quello che decidi di condividere tu</h2>
+<ul>
+  <li><strong>Condividere.</strong> Una nota o una foto esce dal telefono solo quando la condividi tu, con l'app che scegli nella schermata di Android.</li>
+  <li><strong>Salvare un backup.</strong> Tutte le tue note, con le loro foto, in un file che viene salvato dove scegli con la schermata di Android. Se aggiungi una password, è cifrato (AES-256-GCM) e nessuno può aprirlo senza password: se la dimentichi, non c'è modo di recuperarlo, nemmeno per noi. Se lo salvi in una cartella che si sincronizza con un cloud (per esempio Google Drive), lo fa il servizio che hai scelto, secondo le sue condizioni.</li>
+  <li><strong>Backup automatico.</strong> Se lo attivi, all'apertura dell'app viene salvato un backup, ogni giorno o ogni settimana, nella cartella che scegli. È senza password: chi può aprire quella cartella può leggerlo. Si conservano gli ultimi 7.</li>
+  <li><strong>Esportare le note.</strong> Ogni nota in un file .md o .txt, dentro un .zip che viene salvato dove scegli.</li>
+  <li><strong>Importare note.</strong> Se importi un backup di ColorNote, un'esportazione di Google Keep (Google Takeout) o file .txt o .md, Cuadernín legge sul tuo telefono i file che scegli o che condividi con l'app, salva le note sul telefono e cancella la copia temporanea. Se il backup di ColorNote ha una password, quella che scrivi si usa solo in quel momento per aprirlo e non viene salvata. Non vengono importati i dati delle persone con cui condividevi le note. Non viene inviato nulla a JR Soft né a terzi. ColorNote è un marchio di Social &amp; Mobile, Inc., e Google Keep di Google LLC; Cuadernín non è affiliata a queste società.</li>
+  <li><strong>Scrivici.</strong> Apre la tua app email con un messaggio indirizzato a noi, che viene inviato solo se lo invii tu. Se ci scrivi, riceviamo il tuo indirizzo email e ciò che ci racconti; li usiamo solo per risponderti, e cancelliamo il messaggio quando la questione è risolta e, al più tardi, un anno dopo averlo ricevuto.</li>
+  <li><strong>Link.</strong> Un link che scrivi in una nota si apre nel browser solo quando lo tocchi.</li>
+  <li><strong>Ortografia e tastiera.</strong> «Controlla l'ortografia» usa il correttore del telefono stesso. Quello che scrivi passa dalla tua tastiera, come in qualsiasi app: se la tua tastiera ha strumenti di scrittura, sono della tastiera e seguono le sue condizioni.</li>
+</ul>
+
+<h2>Dati che escono dal telefono</h2>
+<p>L'app lo riassume in <em>Opzioni → Cosa esce dal tuo telefono</em>.</p>
+
+<h3>Pubblicità: Google AdMob</h3>
+<p>L'app è gratuita e si sostiene con annunci discreti di Google AdMob, che compaiono solo nell'elenco delle note (un banner in basso e, ogni tanto, un annuncio tra le note): mai mentre scrivi, nei widget né a schermo intero. Le richieste di annunci non contengono nulla delle tue note: né il titolo, né il testo, né le etichette. Gli annunci sono limitati a contenuti adatti agli adolescenti (classificazione T).</p>
+<p>Come in qualsiasi app con AdMob, l'SDK di Google raccoglie l'<strong>ID pubblicità</strong> di Android (puoi reimpostarlo o eliminarlo da <em>Impostazioni di Android → Google → Annunci</em>), l'identificatore del gruppo di app (<em>app set ID</em>), il tuo indirizzo IP (da cui si ricava una posizione approssimativa), le interazioni con l'app e con gli annunci e dati diagnostici. Google li usa per erogare e misurare la pubblicità, per statistiche e per prevenire le frodi, secondo la propria informativa.</p>
+<p>Nello Spazio economico europeo, nel Regno Unito e in Svizzera, l'app mostra il modulo di consenso di Google prima di offrire pubblicità personalizzata. Puoi cambiare la tua scelta quando vuoi in <em>Opzioni → Opzioni sulla privacy degli annunci</em>. Se rifiuti, vedrai pubblicità non personalizzata (o limitata, senza identificatori, se non accetti nemmeno l'uso dell'archiviazione) e l'app funziona esattamente allo stesso modo.</p>
+<p>Come Google utilizza le informazioni delle app che si servono dei suoi servizi: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Valutazioni e Google Play</h3>
+<p>Di tanto in tanto, dopo un bel momento (per esempio, quando finisci una lista o salvi un backup), l'app può chiederti una valutazione con la finestra ufficiale di Google Play, gestita da Google. «Valuta l'app» e «Altre app di JR Soft» aprono Google Play; i loro link contengono un parametro di campagna che indica solo che arrivano da Cuadernín, senza nessun tuo dato. Per mostrarti solo le app disponibili nel tuo paese, «Altre app di JR Soft» controlla sul telefono il paese della SIM o quello della regione del sistema; questo dato non esce dal telefono.</p>
+
+<h3>Indirizzo IP</h3>
+<p>Come in qualsiasi app che si collega a internet, i servizi di Google citati ricevono il tuo indirizzo IP al momento della connessione. Questa app non ha server propri, quindi non conserva registri di alcun tipo.</p>
+
+<h2>Terze parti coinvolte</h2>
+<table>
+  <tr><th>Servizio</th><th>A cosa serve</th><th>La sua informativa</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Pubblicità e modulo di consenso</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Valutazioni e link ad altre app</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Le app che scegli</td>
+    <td>Solo quando condividi, salvi, esporti, importi o invii qualcosa (email, cloud, browser)</td>
+    <td>Quella di ciascuna app</td>
+  </tr>
+</table>
+
+<h2>Trasferimenti internazionali</h2>
+<p>Google LLC può trattare questi dati negli Stati Uniti e in altri paesi. Google aderisce al <strong>quadro UE-USA per la protezione dei dati personali</strong> (EU-U.S. Data Privacy Framework), oggetto della decisione di adeguatezza della Commissione europea del 10 luglio 2023, e utilizza <strong>clausole contrattuali tipo</strong> quando servono: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Anche l'indirizzo email di contatto usa un servizio di Google (Gmail).</p>
+
+<h2>Base giuridica e conservazione</h2>
+<p><strong>Base giuridica.</strong> Ciò che viene elaborato sul tuo telefono non arriva a JR Soft. Per ciò che invece ne esce: (1) pubblicità personalizzata e uso dell'archiviazione del dispositivo per finalità pubblicitarie nel SEE, nel Regno Unito e in Svizzera: il tuo <strong>consenso</strong>, che dai o neghi nel modulo di Google e puoi revocare in <em>Opzioni → Opzioni sulla privacy degli annunci</em> (art. 6, par. 1, lett. a), GDPR e art. 22, comma 2, della LSSI-CE spagnola); (2) pubblicità non personalizzata, la sua misurazione e la prevenzione delle frodi: il <strong>legittimo interesse</strong> a finanziare un'app gratuita e a proteggerla dalle frodi (art. 6, par. 1, lett. f), GDPR); (3) se ci scrivi (per esempio con «Scrivici»): il <strong>legittimo interesse</strong> a risponderti e a risolvere ciò che ci segnali (art. 6, par. 1, lett. f), GDPR). Google tratta i dati di AdMob come <strong>titolare autonomo</strong>, secondo le proprie politiche.</p>
+<p>I dati salvati sul tuo telefono vi restano finché non li cancelli, non disinstalli l'app o non ne cancelli i dati. I backup che salvi fuori dall'app restano dove li hai messi finché non li cancelli tu. Questa app non conserva alcun dato fuori dal tuo telefono, tranne i messaggi che ci invii, che vengono cancellati quando la questione è risolta e, al più tardi, un anno dopo averli ricevuti; Google conserva i propri secondo le sue politiche.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Se risiedi nell'Unione europea, il GDPR ti riconosce i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. In pratica, questa app non conserva alcun tuo dato fuori dal telefono tranne i messaggi che ci invii (per quelli, scrivici all'indirizzo di contatto); i dati di AdMob li tratta Google, presso cui puoi esercitare i tuoi diritti (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Per ciò che si trova sul tuo telefono:</p>
+<ul>
+  <li><strong>Accesso e portabilità:</strong> condividi le tue note, esportale in .md o .txt oppure salva un backup di tutte da <em>Opzioni</em>.</li>
+  <li><strong>Rettifica:</strong> correggi le tue note nell'app stessa.</li>
+  <li><strong>Cancellazione:</strong> elimina una nota, svuota il cestino o usa <em>Opzioni → Elimina tutti i miei dati</em>; puoi anche disinstallare l'app. I backup che hai salvato fuori dall'app sono tuoi: cancellali dove li hai salvati. Non serve chiedere niente a nessuno.</li>
+  <li><strong>Opposizione e revoca del consenso:</strong> cambia la tua scelta sulla pubblicità in <em>Opzioni → Opzioni sulla privacy degli annunci</em>.</li>
+</ul>
+<p>Puoi anche scrivere all'indirizzo di contatto o presentare reclamo all'autorità di controllo del tuo paese. In Spagna è l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Minori</h2>
+<p>Cuadernín è un'app di uso generale, per adulti e adolescenti, e non è rivolta ai bambini. Gli annunci sono limitati a contenuti adatti agli adolescenti (classificazione T). Non raccogliamo consapevolmente dati di bambini; i dati inviati da AdMob sono quelli descritti più sopra. Se hai meno dell'età richiesta nel tuo paese per dare il consenso (in Spagna, 14 anni), chiedi a tua madre, a tuo padre o al tuo tutore di fare la scelta insieme a te nel modulo degli annunci.</p>
+
+<h2>Modifiche a questa informativa</h2>
+<p>Se questa informativa cambia in modo sostanziale, la nuova versione sarà pubblicata a questo stesso indirizzo con una data di aggiornamento diversa.</p>
+
+<h2>Licenze open source</h2>
+<p>Cuadernín usa librerie open source, come Flutter, drift e SQLite. L'elenco con le loro licenze è in <a href="licencias.html">licencias.html</a> e nell'app: <em>Opzioni → Licenze open source</em>.</p>
+
+<footer>
+<p>Cuadernín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.notascolores</code> · Contatto: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

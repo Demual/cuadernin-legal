@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · Cuadernín</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1d1a24; background: #faf8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2f2; background: #14111b; }
+    td, th { border-color: #352e44 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #542eb4; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #c8b5ff; } a { color: #c8b5ff; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #542eb4; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<p class="fecha">앱 <strong>Cuadernín</strong>(<code>com.jrsoft.notascolores</code>) · 최종 업데이트: 2026년 10월 13일</p>
+
+<div class="clave">
+<p><strong>한 문장으로:</strong> Cuadernín은 메모와 체크리스트를 휴대폰 안에 보관해요. 계정도 자체 서버도 없으며, 직접 공유하거나 백업을 저장하거나 내보낼 때를 빼고는 작성한 내용이 휴대폰 밖으로 나가지 않아요. 그 밖에 밖으로 나가는 것은 Google이 광고 제공을 위해 수집하는 기술 데이터와 광고 데이터뿐이며, 아래에서 설명해요.</p>
+</div>
+
+<h2>개인정보처리자</h2>
+<p>개인정보처리자는 Cuadernín 앱의 개발자인 <strong>JR Soft</strong>(<strong>Javier Román Sáez</strong>의 상호)예요. 문의는 <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>으로 보내 주세요.</p>
+
+<h2>이 앱이 하지 않는 일</h2>
+<ul>
+  <li>앱 가입, 계정, 사용자 이름, 비밀번호가 없어요. 이메일, 전화번호, 이름, 위치를 묻는 일도 절대 없어요.</li>
+  <li><strong>메모를 업로드하지 않아요.</strong> 메모, 체크리스트, 사진, 라벨, 알림은 휴대폰에 저장돼요. 이 앱에는 자체 서버가 없어서, 작성한 내용을 JR Soft가 받는 일은 절대 없어요.</li>
+  <li>앱에는 분석 도구나 오류 보고 도구가 들어 있지 않고(Google Analytics, Firebase Analytics, Crashlytics도 없어요), 앱에서 하는 일을 기록하지도 않아요. Google 광고 SDK는 자체 데이터를 보내며, 그 내용은 아래에서 설명해요.</li>
+  <li>데이터를 상업적 목적으로 제3자에게 판매, 대여, 제공하지 않아요.</li>
+  <li>카메라, 사진과 파일, 연락처, 위치 접근 권한을 요청하지 않아요. 메모의 사진은 시스템 사진 선택 도구로 고르거나 휴대폰의 카메라 앱으로 찍고, 파일은 Android 기본 화면으로 열고 저장해요. 대상은 직접 고른 파일뿐이에요.</li>
+  <li>메모는 Google 클라우드에 저장되는 Android 백업에 포함되지 않아요.</li>
+</ul>
+
+<h2>권한</h2>
+<ul>
+  <li><strong>알림</strong>(<code>POST_NOTIFICATIONS</code>)과 <strong>진동</strong>: 설정한 알림을 알려 드리기 위해 사용해요. Android 13 이상에서는 첫 알림을 설정할 때 알림 권한을 요청해요.</li>
+  <li><strong>알람 및 리마인더</strong>(<code>SCHEDULE_EXACT_ALARM</code>): 알림이 정확한 시간에 오도록 사용해요. Android 14 이상에서는 <em>설정 → 정확한 시간에 알림</em>에서 직접 허용한 경우에만 사용해요. 허용하지 않아도 알림은 오지만, 몇 분 정도 차이가 날 수 있어요.</li>
+  <li><strong>부팅 시 실행</strong>(<code>RECEIVE_BOOT_COMPLETED</code>): 휴대폰을 다시 시작하거나 앱을 업데이트한 뒤 알림을 다시 예약하기 위해 사용해요.</li>
+  <li><strong>지문 또는 얼굴 인식</strong>(<code>USE_BIOMETRIC</code>): 앱이나 메모를 잠갔을 때만 사용해요. 확인은 휴대폰 자체의 지문, 얼굴, PIN, 패턴, 비밀번호로 Android가 해요. 앱은 이런 정보를 받지 않고, 잠금이 해제됐는지 여부만 알아요.</li>
+  <li><strong>인터넷</strong>, <strong>네트워크 상태</strong>, <strong>광고 ID</strong>(<code>AD_ID</code>와 Android 광고 서비스 권한): 광고에 필요해요(아래 참고). 메모가 이 권한을 통해 나가는 일은 없어요.</li>
+</ul>
+
+<h2>휴대폰에만 남는 데이터</h2>
+<p>이 정보는 앱 전용 저장 공간(데이터베이스와 사진 폴더)에 저장돼요. 앱을 삭제하거나, Android 설정에서 앱 데이터를 지우거나, <em>설정 → 내 데이터 모두 삭제</em>를 사용하면 사라져요.</p>
+<ul>
+  <li><strong>메모와 체크리스트</strong>: 제목, 본문과 서식, 체크리스트 항목, 색상, 이모티콘, 라벨, 날짜, 고정·보관·잠금 여부.</li>
+  <li>메모에 추가한 <strong>사진</strong>: 사진마다 새 사본을 저장하며, 메타데이터(예: 찍은 장소)는 저장하지 않아요.</li>
+  <li>휴대폰 안에서 예약되는 <strong>알림</strong>과 <strong>템플릿</strong>.</li>
+  <li><strong>휴지통</strong>: 삭제한 항목은 30일 동안 보관된 뒤 지워져요.</li>
+  <li>설정: 언어, 테마, 글자 크기, 정렬, 잠금, 자동 백업 폴더, 각 위젯에 표시되는 내용 및 기타 옵션.</li>
+  <li>다른 앱에서 Cuadernín으로 공유한 사진이나 파일, 또는 가져오기나 백업 복원을 위해 고른 파일은 읽기 위해 앱의 임시 저장 공간에 복사되고, 작업이 끝나면 그 사본은 삭제돼요.</li>
+</ul>
+<p>알림, 위젯, 잠금, 검색은 모두 휴대폰 안에서 오프라인으로 작동해요.</p>
+<p><strong>Android 백업.</strong> 이 앱은 Android 자동 백업이 메모, 사진, 설정을 Google 클라우드에 올리지 못하게 해요. 다만 휴대폰을 바꿀 때 직접 하는 기기 간 직접 전송(케이블 또는 근거리 연결, Android 12 이상)은 허용해서, 메모를 잃지 않도록 해요.</p>
+
+<h2>직접 공유하기로 선택하는 것</h2>
+<ul>
+  <li><strong>공유.</strong> 메모나 사진은 Android 화면에서 고른 앱으로 직접 공유할 때만 휴대폰 밖으로 나가요.</li>
+  <li><strong>백업 저장.</strong> 모든 메모를 사진과 함께 파일 하나로 만들어, Android 화면에서 고른 곳에 저장해요. 비밀번호를 설정하면 AES-256-GCM으로 암호화되어 비밀번호 없이는 아무도 열 수 없어요. 비밀번호를 잊으면 복구할 방법이 없으며, 저희도 복구할 수 없어요. 클라우드(예: Google 드라이브)와 동기화되는 폴더에 저장하면, 동기화는 선택한 서비스가 그 서비스의 약관에 따라 해요.</li>
+  <li><strong>자동 백업.</strong> 켜 두면 앱을 열 때 매일 또는 매주, 고른 폴더에 백업이 저장돼요. 비밀번호가 없으므로 그 폴더를 열 수 있는 사람은 누구나 읽을 수 있어요. 최근 7개만 보관해요.</li>
+  <li><strong>메모 내보내기.</strong> 각 메모를 .md 또는 .txt 파일로 만들어 .zip 하나에 담고, 원하는 곳에 저장해요.</li>
+  <li><strong>메모 가져오기.</strong> ColorNote 백업, Google Keep 내보내기 파일(Google Takeout), .txt나 .md 파일을 가져오면, Cuadernín은 직접 고르거나 공유한 파일을 휴대폰 안에서 읽고, 메모를 휴대폰에 저장한 뒤 임시 사본을 삭제해요. ColorNote 백업에 비밀번호가 걸려 있으면, 입력한 비밀번호는 그 순간 백업을 여는 데만 쓰이고 저장되지 않아요. 메모를 함께 공유하던 사람들의 정보는 가져오지 않아요. JR Soft나 제3자에게는 아무것도 보내지 않아요. ColorNote는 Social &amp; Mobile, Inc.의 상표이고 Google Keep은 Google LLC의 상표예요. Cuadernín은 이들 회사와 관련이 없어요.</li>
+  <li><strong>문의하기.</strong> 저희에게 보내는 메시지가 담긴 상태로 이메일 앱이 열리며, 직접 보낼 때만 전송돼요. 문의를 보내 주시면 저희는 이메일 주소와 보내 주신 내용을 받게 되며, 이를 답장하는 데만 사용하고, 문의가 해결되면, 늦어도 받은 날부터 1년 안에 메시지를 삭제해요.</li>
+  <li><strong>링크.</strong> 메모에 적은 링크는 직접 탭할 때만 브라우저에서 열려요.</li>
+  <li><strong>맞춤법과 키보드.</strong> ‘맞춤법 검사’는 휴대폰 자체의 맞춤법 검사기를 사용해요. 입력하는 내용은 다른 앱과 마찬가지로 키보드를 거쳐요. 키보드에 글쓰기 도구가 있다면, 그것은 키보드의 기능이며 키보드의 약관을 따라요.</li>
+</ul>
+
+<h2>휴대폰 밖으로 나가는 데이터</h2>
+<p>앱의 <em>설정 → 휴대폰 밖으로 나가는 것</em>에서 요약해서 볼 수 있어요.</p>
+
+<h3>광고: Google AdMob</h3>
+<p>이 앱은 무료이며 Google AdMob의 조용한 광고로 운영돼요. 광고는 메모 목록에만 나오고(아래쪽 배너, 그리고 가끔 메모 사이에 하나), 글을 쓰는 동안이나 위젯에는 나오지 않으며 전체 화면 광고도 없어요. 광고 요청에는 메모의 내용(제목, 본문, 라벨)이 전혀 담기지 않아요. 광고는 청소년에게 적합한 콘텐츠(T 등급)로 제한돼요.</p>
+<p>AdMob을 쓰는 다른 앱과 마찬가지로 Google SDK는 Android <strong>광고 ID</strong>(<em>Android 설정 → Google → 광고</em>에서 재설정하거나 삭제할 수 있어요), 앱 세트 ID(<em>app set ID</em>), IP 주소(대략적인 위치를 추정하는 데 쓰여요), 앱 및 광고와의 상호작용, 진단 데이터를 수집해요. Google은 자체 정책에 따라 이 데이터를 광고 제공 및 측정, 통계, 사기 방지에 사용해요.</p>
+<p>유럽 경제 지역(EEA), 영국, 스위스에서는 맞춤 광고를 제공하기 전에 Google 동의 양식을 보여 줘요. 선택은 언제든지 <em>설정 → 광고 개인정보 보호 설정</em>에서 바꿀 수 있어요. 거부하면 맞춤이 아닌 광고(저장소 사용에도 동의하지 않으면 식별자를 쓰지 않는 제한된 광고)가 표시되고, 앱은 똑같이 작동해요.</p>
+<p>Google 서비스를 사용하는 앱의 정보를 Google이 사용하는 방식은 여기에서 볼 수 있어요: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>평가와 Google Play</h3>
+<p>좋은 순간이 지난 뒤(예: 체크리스트를 끝내거나 백업을 저장했을 때) 가끔 Google이 관리하는 Google Play 공식 창으로 평가를 요청할 수 있어요. ‘앱 평가하기’와 ‘JR Soft의 다른 앱’은 Google Play를 열어요. 이 링크에는 Cuadernín에서 왔다는 것만 알려 주는 캠페인 매개변수가 붙으며, 사용자에 관한 데이터는 담기지 않아요. ‘JR Soft의 다른 앱’은 사용자 국가에서 받을 수 있는 앱만 보여 주기 위해 휴대폰 안에서 SIM 카드의 국가나 시스템 지역을 확인해요. 이 정보는 휴대폰 밖으로 나가지 않아요.</p>
+
+<h3>IP 주소</h3>
+<p>인터넷에 연결하는 다른 앱과 마찬가지로, 위에서 말한 Google 서비스는 연결할 때 IP 주소를 받아요. 이 앱에는 자체 서버가 없어서 어떤 종류의 기록도 남기지 않아요.</p>
+
+<h2>관련된 제3자</h2>
+<table>
+  <tr><th>서비스</th><th>용도</th><th>개인정보처리방침</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>광고와 동의 양식</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>평가와 다른 앱으로 가는 링크</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>직접 선택한 앱</td>
+    <td>무언가를 공유, 저장, 내보내기, 가져오기, 전송할 때만(이메일, 클라우드, 브라우저)</td>
+    <td>각 앱의 방침</td>
+  </tr>
+</table>
+
+<h2>개인정보의 국외 이전</h2>
+<p>Google LLC는 이 데이터를 미국과 다른 나라에서 처리할 수 있어요. Google은 <strong>EU-미국 데이터 프라이버시 프레임워크</strong>(2023년 7월 10일 유럽연합 집행위원회의 적정성 결정)에 참여하고 있으며, 필요한 경우 <strong>표준계약조항</strong>을 사용해요: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. 문의용 이메일도 Google 서비스(Gmail)예요.</p>
+
+<h2>법적 근거와 보관 기간</h2>
+<p><strong>법적 근거.</strong> 휴대폰 안에서 처리되는 것은 JR Soft에 전달되지 않아요. 휴대폰 밖으로 나가는 것의 근거는 다음과 같아요. (1) 유럽 경제 지역(EEA), 영국, 스위스에서의 맞춤 광고와 광고 목적의 기기 저장소 사용: <strong>동의</strong>예요. Google 양식에서 동의하거나 거부할 수 있고, <em>설정 → 광고 개인정보 보호 설정</em>에서 철회할 수 있어요(GDPR 제6조 제1항 (a)호 및 LSSI-CE 제22조 제2항). (2) 맞춤이 아닌 광고, 그 측정, 사기 방지: 무료 앱의 운영 비용을 마련하고 사기로부터 보호하려는 <strong>정당한 이익</strong>이에요(GDPR 제6조 제1항 (f)호). (3) 저희에게 연락하는 경우(예: ‘문의하기’): 답장하고 알려 주신 내용을 해결하려는 <strong>정당한 이익</strong>이에요(GDPR 제6조 제1항 (f)호). Google은 AdMob의 데이터를 <strong>독립적인 개인정보처리자</strong>로서 자체 정책에 따라 처리해요.</p>
+<p>휴대폰에 저장된 데이터는 직접 삭제하거나, 앱을 삭제하거나, 앱 데이터를 지울 때까지 남아 있어요. 앱 밖에 저장한 백업은 직접 삭제할 때까지 저장한 곳에 그대로 남아요. 이 앱은 보내 주신 메시지를 빼고는 휴대폰 밖에 어떤 데이터도 보관하지 않으며, 그 메시지도 문의가 해결되면, 늦어도 받은 날부터 1년 안에 삭제돼요. Google은 자체 정책에 따라 자사 데이터를 보관해요.</p>
+
+<h2>이용자의 권리</h2>
+<p>유럽연합(EU)에 거주한다면 GDPR(EU 일반 개인정보 보호법)에 따라 열람, 정정, 삭제, 처리 제한, 개인정보 이동, 처리 반대에 대한 권리가 있어요. 실제로 이 앱은 보내 주신 메시지를 빼고는 휴대폰 밖에 어떤 데이터도 보관하지 않아요(메시지에 관해서는 연락처 이메일로 연락해 주세요). AdMob의 데이터는 Google이 처리하며, Google에 권리를 행사할 수 있어요(<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). 휴대폰에 있는 데이터에 대해서는 다음과 같이 권리를 행사할 수 있어요.</p>
+<ul>
+  <li><strong>열람과 개인정보 이동:</strong> 메모를 공유하거나, .md나 .txt로 내보내거나, <em>설정</em>에서 모든 메모의 백업을 저장하세요.</li>
+  <li><strong>정정:</strong> 앱에서 메모를 직접 고치세요.</li>
+  <li><strong>삭제:</strong> 메모를 삭제하거나, 휴지통을 비우거나, <em>설정 → 내 데이터 모두 삭제</em>를 사용하세요. 앱을 삭제해도 돼요. 앱 밖에 저장한 백업은 사용자의 것이니, 저장한 곳에서 직접 삭제하세요. 누구에게도 따로 요청할 필요가 없어요.</li>
+  <li><strong>처리 반대와 동의 철회:</strong> <em>설정 → 광고 개인정보 보호 설정</em>에서 광고 선택을 바꾸세요.</li>
+</ul>
+<p>위의 연락처 이메일로 문의하거나, 거주 국가의 감독 기관에 민원을 제기할 수도 있어요. 스페인에서는 <a href="https://www.aepd.es">스페인 개인정보보호청(AEPD)</a>이에요.</p>
+
+<h2>미성년자</h2>
+<p>Cuadernín은 성인과 청소년을 위한 일반 앱이며, 어린이를 대상으로 하지 않아요. 광고는 청소년에게 적합한 콘텐츠(T 등급)로 제한돼요. 어린이의 데이터를 알면서 수집하지 않으며, AdMob이 보내는 데이터는 위에서 설명한 것과 같아요. 거주 국가에서 직접 동의할 수 있는 나이(스페인에서는 만 14세)가 되지 않았다면, 부모님이나 보호자와 함께 광고 양식에서 선택해 주세요.</p>
+
+<h2>방침의 변경</h2>
+<p>이 방침이 크게 바뀌면 새 버전을 같은 주소에 다른 업데이트 날짜와 함께 게시해요.</p>
+
+<h2>오픈소스 라이선스</h2>
+<p>Cuadernín은 Flutter, drift, SQLite 같은 오픈소스 라이브러리를 사용해요. 라이선스 목록은 <a href="licencias.html">licencias.html</a>에 있고, 앱의 <em>설정 → 오픈소스 라이선스</em>에서도 볼 수 있어요.</p>
+
+<footer>
+<p>Cuadernín · JR Soft(Javier Román Sáez) · <code>com.jrsoft.notascolores</code> · 문의: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

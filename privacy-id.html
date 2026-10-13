@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan privasi · Cuadernín</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1d1a24; background: #faf8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2f2; background: #14111b; }
+    td, th { border-color: #352e44 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #542eb4; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #c8b5ff; } a { color: #c8b5ff; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #542eb4; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Kebijakan privasi</h1>
+<p class="fecha">Aplikasi <strong>Cuadernín</strong> (<code>com.jrsoft.notascolores</code>) · Terakhir diperbarui: 13 Oktober 2026</p>
+
+<div class="clave">
+<p><strong>Singkatnya:</strong> Cuadernín menyimpan catatan dan daftarmu di dalam ponselmu. Tidak ada akun maupun server sendiri, dan apa yang kamu tulis tidak keluar dari ponsel kecuali saat kamu membagikannya, menyimpan cadangan, atau mengekspornya. Selain itu, yang keluar hanyalah data teknis dan data iklan yang dikumpulkan Google untuk menayangkan iklan, seperti dijelaskan di bawah.</p>
+</div>
+
+<h2>Siapa yang bertanggung jawab</h2>
+<p>Pengendali data adalah <strong>JR Soft</strong>, nama dagang dari <strong>Javier Román Sáez</strong>, pengembang aplikasi Cuadernín. Kamu bisa menghubungi kami di <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Yang TIDAK dilakukan aplikasi ini</h2>
+<ul>
+  <li>Tidak ada pendaftaran, akun, nama pengguna, atau kata sandi aplikasi. Kamu tidak pernah dimintai email, nomor telepon, nama, atau lokasi.</li>
+  <li><strong>Tidak mengunggah catatanmu.</strong> Catatan, daftar, foto, label, dan pengingatmu disimpan di ponselmu. Aplikasi ini tidak punya server sendiri: JR Soft tidak pernah menerima apa pun yang kamu tulis.</li>
+  <li>Aplikasi ini tidak menyertakan alat analitik atau laporan error (tidak ada Google Analytics, Firebase Analytics, ataupun Crashlytics) dan tidak mencatat apa yang kamu lakukan di dalamnya. SDK iklan Google memang mengirim datanya sendiri, yang dijelaskan di bawah.</li>
+  <li>Data tidak dijual, disewakan, atau diberikan kepada pihak ketiga untuk tujuan komersial.</li>
+  <li>Tidak meminta izin untuk memakai kamera, foto dan file, kontak, atau lokasimu. Foto untuk catatan dipilih dengan pemilih foto sistem atau diambil dengan aplikasi kamera ponsel, dan file dibuka serta disimpan lewat layar bawaan Android, hanya file yang kamu pilih.</li>
+  <li>Catatanmu tidak disertakan dalam cadangan Android di cloud Google.</li>
+</ul>
+
+<h2>Izin</h2>
+<ul>
+  <li><strong>Notifikasi</strong> (<code>POST_NOTIFICATIONS</code>) dan <strong>getar</strong>, untuk memberitahumu soal pengingat. Di Android 13 atau yang lebih baru, izin notifikasi diminta saat kamu memasang pengingat pertama.</li>
+  <li><strong>Alarm &amp; pengingat</strong> (<code>SCHEDULE_EXACT_ALARM</code>), agar pengingat datang tepat waktu. Di Android 14 atau yang lebih baru, hanya jika kamu sendiri memberikannya dari <em>Setelan → Pengingat tepat waktu</em>; tanpa izin ini, pengingat tetap datang, dengan selisih beberapa menit.</li>
+  <li><strong>Berjalan saat ponsel dinyalakan</strong> (<code>RECEIVE_BOOT_COMPLETED</code>), untuk menjadwalkan ulang pengingat setelah ponsel dimulai ulang atau aplikasi diperbarui.</li>
+  <li><strong>Sidik jari atau pengenalan wajah</strong> (<code>USE_BIOMETRIC</code>), hanya jika kamu mengunci aplikasi atau sebuah catatan. Pemeriksaannya dilakukan oleh Android, dengan sidik jari, wajah, atau PIN, pola, maupun kata sandi ponsel itu sendiri: aplikasi tidak pernah menerimanya, hanya tahu apakah kunci berhasil dibuka atau tidak.</li>
+  <li><strong>Internet</strong>, <strong>status jaringan</strong>, dan <strong>ID iklan</strong> (<code>AD_ID</code> dan izin layanan iklan Android), yang dibutuhkan oleh iklan (lihat di bawah). Catatanmu tidak keluar lewat izin-izin ini.</li>
+</ul>
+
+<h2>Data yang hanya tersimpan di ponselmu</h2>
+<p>Informasi ini disimpan di penyimpanan pribadi aplikasi (sebuah database dan folder foto). Semuanya hilang jika kamu menghapus aplikasi, menghapus datanya dari setelan Android, atau memakai <em>Setelan → Hapus semua dataku</em>.</p>
+<ul>
+  <li><strong>Catatan dan daftar</strong>mu: judul, teks beserta formatnya, item daftar, warna, emoji, label, tanggal, serta apakah disematkan, diarsipkan, atau dikunci.</li>
+  <li><strong>Foto</strong> yang kamu tambahkan ke catatan. Dari setiap foto disimpan salinan baru, tanpa metadatanya (misalnya, tempat foto itu diambil).</li>
+  <li><strong>Pengingat</strong>mu, yang dijadwalkan di ponsel itu sendiri, dan <strong>template</strong>mu.</li>
+  <li><strong>Sampah</strong>: yang kamu hapus disimpan selama 30 hari, lalu dihapus.</li>
+  <li>Setelanmu: bahasa, tema, ukuran teks, urutan, kunci, folder cadangan otomatis, apa yang ditampilkan setiap widget, dan opsi lainnya.</li>
+  <li>Foto atau file yang kamu bagikan ke Cuadernín dari aplikasi lain, atau yang kamu pilih untuk diimpor atau untuk memulihkan cadangan, disalin ke memori sementara aplikasi agar bisa dibaca, dan salinan itu dihapus setelah selesai.</li>
+</ul>
+<p>Pengingat, widget, kunci, dan pencarian berjalan di dalam ponsel, tanpa koneksi internet.</p>
+<p><strong>Cadangan Android.</strong> Aplikasi tidak mengizinkan cadangan otomatis Android mengunggah catatan, foto, maupun setelanmu ke cloud Google. Namun, aplikasi mengizinkan transfer langsung dari ponsel ke ponsel yang kamu lakukan sendiri saat ganti ponsel (lewat kabel atau secara lokal, di Android 12 atau yang lebih baru), agar catatanmu tidak hilang.</p>
+
+<h2>Yang kamu putuskan untuk dibagikan</h2>
+<ul>
+  <li><strong>Bagikan.</strong> Catatan atau foto hanya keluar dari ponsel saat kamu membagikannya, dengan aplikasi yang kamu pilih di layar Android.</li>
+  <li><strong>Simpan cadangan.</strong> Semua catatanmu, beserta fotonya, dalam satu file yang disimpan di tempat yang kamu pilih lewat layar Android. Jika kamu memberinya kata sandi, cadangan dienkripsi (AES-256-GCM) dan tidak ada yang bisa membukanya tanpa kata sandi itu: jika kamu lupa, tidak ada cara untuk memulihkannya, termasuk bagi kami. Jika kamu menyimpannya di folder yang disinkronkan dengan cloud (misalnya Google Drive), sinkronisasi dilakukan oleh layanan yang kamu pilih, sesuai ketentuannya.</li>
+  <li><strong>Cadangan otomatis.</strong> Jika kamu mengaktifkannya, cadangan disimpan saat kamu membuka aplikasi, setiap hari atau setiap minggu, di folder yang kamu pilih. Cadangan ini tanpa kata sandi: siapa pun yang bisa membuka folder itu bisa membacanya. Yang disimpan hanya 7 terakhir.</li>
+  <li><strong>Ekspor catatan.</strong> Setiap catatan dalam file .md atau .txt, di dalam sebuah .zip yang disimpan di tempat yang kamu pilih.</li>
+  <li><strong>Impor catatan.</strong> Jika kamu mengimpor cadangan ColorNote, ekspor Google Keep (Google Takeout), atau file .txt atau .md, Cuadernín membaca di ponselmu file yang kamu pilih atau bagikan kepadanya, menyimpan catatan di ponsel, dan menghapus salinan sementaranya. Jika cadangan ColorNote memakai kata sandi, kata sandi yang kamu ketik hanya dipakai saat itu untuk membukanya dan tidak disimpan. Data orang-orang yang dulu berbagi catatan denganmu tidak diimpor. Tidak ada yang dikirim ke JR Soft maupun pihak ketiga. ColorNote adalah merek dagang Social &amp; Mobile, Inc., dan Google Keep adalah merek dagang Google LLC; Cuadernín tidak berafiliasi dengan mereka.</li>
+  <li><strong>Hubungi kami.</strong> Membuka aplikasi emailmu dengan pesan yang ditujukan kepada kami, yang hanya terkirim jika kamu sendiri yang mengirimnya. Jika kamu menulis kepada kami, kami menerima alamat emailmu dan apa yang kamu sampaikan; kami memakainya hanya untuk membalasmu, dan kami menghapus pesan itu setelah urusannya selesai, paling lambat satu tahun setelah kami menerimanya.</li>
+  <li><strong>Tautan.</strong> Tautan yang kamu tulis di catatan hanya terbuka di browser saat kamu mengetuknya.</li>
+  <li><strong>Ejaan dan keyboard.</strong> “Periksa ejaan” memakai pemeriksa ejaan bawaan ponsel. Apa yang kamu ketik melewati keyboard-mu, seperti di aplikasi mana pun: jika keyboard-mu punya alat menulis, alat itu milik keyboard dan mengikuti ketentuannya sendiri.</li>
+</ul>
+
+<h2>Data yang keluar dari ponsel</h2>
+<p>Aplikasi merangkumnya di <em>Setelan → Apa yang keluar dari ponselmu</em>.</p>
+
+<h3>Iklan: Google AdMob</h3>
+<p>Aplikasi ini gratis dan didukung oleh iklan Google AdMob yang tidak mengganggu, yang hanya muncul di daftar catatan (banner di bagian bawah dan, sesekali, satu iklan di antara catatan): tidak pernah saat kamu menulis, di widget, atau dalam layar penuh. Permintaan iklan tidak membawa apa pun dari catatanmu: tidak judul, tidak teks, tidak juga label. Iklan dibatasi pada konten yang sesuai untuk remaja (rating T).</p>
+<p>Seperti aplikasi lain yang memakai AdMob, SDK Google mengumpulkan <strong>ID iklan</strong> Android (kamu bisa meresetnya atau menghapusnya di <em>Setelan Android → Google → Iklan</em>), ID kumpulan aplikasi (<em>app set ID</em>), alamat IP-mu (yang bisa dipakai untuk memperkirakan lokasimu), interaksi dengan aplikasi dan iklan, serta data diagnostik. Google memakainya untuk menayangkan dan mengukur iklan, untuk statistik, dan untuk mencegah penipuan, sesuai kebijakannya sendiri.</p>
+<p>Di Wilayah Ekonomi Eropa, Inggris, dan Swiss, aplikasi menampilkan formulir persetujuan Google sebelum menayangkan iklan yang dipersonalisasi. Kamu bisa mengubah pilihanmu kapan saja di <em>Setelan → Opsi privasi iklan</em>. Jika kamu menolak, kamu akan melihat iklan yang tidak dipersonalisasi (atau terbatas, tanpa ID, jika kamu juga tidak menyetujui penggunaan penyimpanan) dan aplikasi tetap berfungsi persis sama.</p>
+<p>Cara Google memakai informasi dari aplikasi yang memakai layanannya: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Penilaian dan Google Play</h3>
+<p>Sesekali, setelah momen yang menyenangkan (misalnya saat kamu menyelesaikan daftar atau menyimpan cadangan), aplikasi bisa memintamu memberi penilaian lewat jendela resmi Google Play yang dikelola Google. “Beri nilai aplikasi” dan “Aplikasi lain dari JR Soft” membuka Google Play; tautannya membawa parameter kampanye yang hanya menunjukkan bahwa tautan itu berasal dari Cuadernín, tanpa data apa pun tentangmu. Agar hanya menampilkan aplikasi yang tersedia di negaramu, “Aplikasi lain dari JR Soft” memeriksa di ponsel negara kartu SIM atau wilayah sistem; informasi itu tidak keluar dari ponsel.</p>
+
+<h3>Alamat IP</h3>
+<p>Seperti aplikasi apa pun yang terhubung ke internet, layanan Google yang disebutkan di atas menerima alamat IP-mu saat terhubung. Aplikasi ini tidak punya server sendiri, jadi tidak menyimpan log dalam bentuk apa pun.</p>
+
+<h2>Pihak ketiga yang terlibat</h2>
+<table>
+  <tr><th>Layanan</th><th>Untuk apa</th><th>Kebijakannya</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Iklan dan formulir persetujuan</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Penilaian dan tautan ke aplikasi lain</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Aplikasi yang kamu pilih</td>
+    <td>Hanya saat kamu membagikan, menyimpan, mengekspor, mengimpor, atau mengirim sesuatu (email, cloud, browser)</td>
+    <td>Kebijakan masing-masing aplikasi</td>
+  </tr>
+</table>
+
+<h2>Transfer data internasional</h2>
+<p>Google LLC dapat memproses data ini di Amerika Serikat dan negara lain. Google tergabung dalam <strong>Kerangka Privasi Data UE-AS</strong> (EU-U.S. Data Privacy Framework; keputusan kecukupan Komisi Eropa tanggal 10 Juli 2023) dan menggunakan <strong>klausul kontrak standar</strong> bila diperlukan: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Email kontak juga merupakan layanan Google (Gmail).</p>
+
+<h2>Dasar hukum dan penyimpanan</h2>
+<p><strong>Dasar hukum.</strong> Apa yang diproses di ponselmu tidak sampai ke JR Soft. Untuk yang keluar dari ponsel: (1) iklan yang dipersonalisasi dan penggunaan penyimpanan perangkat untuk tujuan iklan di Wilayah Ekonomi Eropa, Inggris, dan Swiss: <strong>persetujuan</strong>mu, yang kamu berikan atau tolak di formulir Google dan bisa kamu tarik di <em>Setelan → Opsi privasi iklan</em> (Pasal 6.1.a GDPR dan Pasal 22.2 LSSI-CE); (2) iklan yang tidak dipersonalisasi, pengukurannya, dan pencegahan penipuan: <strong>kepentingan yang sah</strong> untuk membiayai aplikasi gratis dan melindunginya dari penipuan (Pasal 6.1.f GDPR); (3) jika kamu menulis kepada kami (misalnya lewat “Hubungi kami”): <strong>kepentingan yang sah</strong> untuk membalasmu dan menyelesaikan hal yang kamu sampaikan (Pasal 6.1.f GDPR). Google memproses data AdMob sebagai <strong>pengendali data independen</strong>, dengan kebijakannya sendiri.</p>
+<p>Data yang tersimpan di ponselmu tetap ada sampai kamu menghapusnya, menghapus aplikasi, atau menghapus datanya. Cadangan yang kamu simpan di luar aplikasi tetap berada di tempat kamu menaruhnya sampai kamu sendiri menghapusnya. Aplikasi ini tidak menyimpan data apa pun di luar ponselmu, kecuali pesan yang kamu kirim kepada kami, yang dihapus setelah urusannya selesai, paling lambat satu tahun setelah diterima; Google menyimpan datanya sendiri sesuai kebijakannya.</p>
+
+<h2>Hak-hakmu</h2>
+<p>Jika kamu tinggal di Uni Eropa, GDPR memberimu hak akses, perbaikan, penghapusan, pembatasan, portabilitas, dan keberatan. Dalam praktiknya, aplikasi ini tidak menyimpan data apa pun milikmu di luar ponsel, kecuali pesan yang kamu kirim kepada kami (untuk pesan itu, tulislah ke alamat kontak); data AdMob diproses oleh Google, dan kamu bisa menggunakan hakmu terhadap Google (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Untuk yang ada di ponselmu:</p>
+<ul>
+  <li><strong>Akses dan portabilitas:</strong> bagikan catatanmu, ekspor ke .md atau .txt, atau simpan cadangan semua catatan dari <em>Setelan</em>.</li>
+  <li><strong>Perbaikan:</strong> koreksi catatanmu di dalam aplikasi.</li>
+  <li><strong>Penghapusan:</strong> hapus catatan, kosongkan sampah, atau pakai <em>Setelan → Hapus semua dataku</em>; kamu juga bisa menghapus aplikasi. Cadangan yang kamu simpan di luar aplikasi adalah milikmu: hapus di tempat kamu menyimpannya. Tidak perlu meminta apa pun kepada siapa pun.</li>
+  <li><strong>Keberatan dan penarikan persetujuan:</strong> ubah pilihan iklanmu di <em>Setelan → Opsi privasi iklan</em>.</li>
+</ul>
+<p>Kamu juga bisa menulis ke alamat kontak atau mengajukan keluhan ke otoritas pengawas di negaramu. Di Spanyol, otoritasnya adalah <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Anak-anak</h2>
+<p>Cuadernín adalah aplikasi untuk penggunaan umum, bagi orang dewasa dan remaja, dan tidak ditujukan untuk anak-anak. Iklan dibatasi pada konten yang sesuai untuk remaja (rating T). Kami tidak dengan sengaja mengumpulkan data anak-anak; data yang dikirim AdMob adalah yang dijelaskan di atas. Jika usiamu di bawah usia yang disyaratkan negaramu untuk memberi persetujuan (di Spanyol, 14 tahun), mintalah orang tua atau walimu untuk memilih bersamamu di formulir iklan.</p>
+
+<h2>Perubahan kebijakan ini</h2>
+<p>Jika kebijakan ini berubah secara substansial, versi barunya akan dipublikasikan di alamat yang sama dengan tanggal pembaruan yang berbeda.</p>
+
+<h2>Lisensi sumber terbuka</h2>
+<p>Cuadernín memakai library sumber terbuka, seperti Flutter, drift, dan SQLite. Daftar beserta lisensinya ada di <a href="licencias.html">licencias.html</a> dan di aplikasi: <em>Setelan → Lisensi sumber terbuka</em>.</p>
+
+<footer>
+<p>Cuadernín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.notascolores</code> · Kontak: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+
+</body>
+</html>

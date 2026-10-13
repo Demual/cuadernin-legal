@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licencias de código abierto · Cuadernín</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1d1a24; background: #faf8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2f2; background: #14111b; }
+    td, th { border-color: #352e44 !important; }
+    a { color: #c8b5ff; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #542eb4; }
+  @media (prefers-color-scheme: dark) { h2 { color: #c8b5ff; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Licencias de código abierto</h1>
+<p class="fecha">Open-source licences · <strong>Cuadernín</strong> (<code>com.jrsoft.notascolores</code>) · 13 de octubre de 2026</p>
+
+<p>Cuadernín está hecho con estas bibliotecas de código abierto, a cuyos autores
+agradecemos su trabajo. Dentro de la aplicación, en <em>Ajustes → Licencias de
+código abierto</em>, está el texto entero de la licencia de cada paquete de
+Flutter y Dart.</p>
+<p lang="en"><em>Cuadernín is built with these open-source libraries. The complete
+licence text of every Flutter and Dart package is inside the app: Settings →
+Open-source licences.</em></p>
+
+<h2>Notas, recordatorios y widgets</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Para qué</th><th>Licencia</th></tr>
+  <tr><td><a href="https://pub.dev/packages/drift">drift</a> y drift_flutter</td><td>La base de datos de las notas</td><td>MIT</td></tr>
+  <tr><td><a href="https://pub.dev/packages/sqlite3">sqlite3</a> (paquete de Dart)</td><td>SQLite desde Dart</td><td>MIT</td></tr>
+  <tr><td><a href="https://www.sqlite.org">SQLite</a></td><td>La base de datos, dentro del teléfono</td><td>Dominio público</td></tr>
+  <tr><td><a href="https://pub.dev/packages/flutter_local_notifications">flutter_local_notifications</a></td><td>Los avisos de los recordatorios</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td><a href="https://github.com/google/gson">Gson</a></td><td>Recordar los avisos programados, dentro de flutter_local_notifications</td><td>Apache 2.0</td></tr>
+  <tr><td><a href="https://pub.dev/packages/timezone">timezone</a></td><td>La hora de los recordatorios en tu zona horaria</td><td>BSD de 2 cláusulas</td></tr>
+  <tr><td><a href="https://www.iana.org/time-zones">IANA Time Zone Database</a></td><td>Las zonas horarias, dentro de timezone</td><td>Dominio público</td></tr>
+  <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/glance">AndroidX Glance</a> (con Jetpack Compose)</td><td>Los widgets de la pantalla de inicio</td><td>Apache 2.0</td></tr>
+  <tr><td>AndroidX Biometric</td><td>El bloqueo con la huella, la cara o el PIN del teléfono</td><td>Apache 2.0</td></tr>
+  <tr><td>AndroidX ExifInterface</td><td>Poner derechas las fotos de las notas</td><td>Apache 2.0</td></tr>
+  <tr><td><a href="https://github.com/google/desugar_jdk_libs">desugar_jdk_libs</a> (de OpenJDK)</td><td>Fechas y horas de los recordatorios en las versiones antiguas de Android</td><td>GPL v2 con la excepción Classpath (abajo)</td></tr>
+</table>
+
+<h2>La aplicación</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Licencia</th></tr>
+  <tr><td><a href="https://flutter.dev">Flutter</a> y Dart</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>flutter_riverpod, riverpod</td><td>MIT</td></tr>
+  <tr><td>go_router, url_launcher, shared_preferences, path_provider</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>intl, path, characters, collection</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>clock</td><td>Apache 2.0</td></tr>
+  <tr><td>share_plus, package_info_plus</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>in_app_review</td><td>MIT</td></tr>
+  <tr><td>google_mobile_ads (el complemento de Flutter)</td><td>Apache 2.0</td></tr>
+  <tr><td>webview_flutter, dentro de google_mobile_ads</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>firebase_core, firebase_remote_config (los complementos)</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>AndroidX (Jetpack)</td><td>Apache 2.0</td></tr>
+  <tr><td>Biblioteca estándar de Kotlin y kotlinx.coroutines</td><td>Apache 2.0</td></tr>
+</table>
+
+<h2>Avisos de copyright</h2>
+<ul>
+  <li>AndroidX, Jetpack Compose y Glance: Copyright The Android Open Source Project.</li>
+  <li>Biblioteca estándar de Kotlin y kotlinx.coroutines: Copyright JetBrains s.r.o. y los colaboradores del lenguaje Kotlin.</li>
+  <li>Gson: Copyright Google Inc.</li>
+  <li>timezone: Copyright (c) 2014, los autores del proyecto timezone.</li>
+  <li>desugar_jdk_libs: basado en OpenJDK, Copyright Oracle y/o sus filiales.</li>
+</ul>
+
+<h2>desugar_jdk_libs: GPL v2 con la excepción Classpath</h2>
+<p>Las versiones antiguas de Android no traen todas las clases de fechas y horas
+de Java que usan los recordatorios. Al compilar, las herramientas de Android
+añaden a la aplicación las que faltan desde <strong>desugar_jdk_libs</strong>,
+una parte de OpenJDK que Google adapta para Android. Su licencia es la
+<strong>GNU General Public License, versión 2, con la excepción Classpath</strong>;
+la excepción permite usar la biblioteca dentro de una aplicación que tiene su
+propia licencia. Va tal cual, sin cambios por nuestra parte. Su código fuente está
+en <a href="https://github.com/google/desugar_jdk_libs">github.com/google/desugar_jdk_libs</a>
+y el texto de la licencia, en
+<a href="https://openjdk.org/legal/gplv2+ce.html">openjdk.org/legal/gplv2+ce.html</a>.</p>
+
+<h2>Servicios de Google (no son de código abierto)</h2>
+<p>El <strong>SDK de Google Mobile Ads</strong> con la <strong>plataforma de
+mensajes de usuario</strong> de Google (el formulario de consentimiento), la
+biblioteca de <strong>valoraciones de Google Play</strong> y los <strong>servicios
+de Google Play</strong> se usan según las condiciones de Google. Lo que hacen con
+tus datos está en la <a href="privacidad-es.html">política de privacidad</a>.</p>
+
+<footer>
+<p>Cuadernín · JR Soft (Javier Román Sáez) · <a href="index.html">Documentos legales</a> ·
+<a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
