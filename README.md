@@ -5,8 +5,8 @@ Política de privacidad y licencias de código abierto de la aplicación
 
 Esta carpeta existe para servir esos documentos por HTTPS con una URL pública y
 estable, que es requisito de Google Play y del mensaje de consentimiento de
-AdMob. Se publicará como el repositorio `cuadernin-legal`, que **no contendrá el
-código de la aplicación**.
+AdMob. Este repositorio, `cuadernin-legal`, **no contiene el código de la
+aplicación**.
 
 | Documento | |
 |---|---|
@@ -34,11 +34,10 @@ cambiar las quince a la vez: la app enlaza cada una según su idioma
 (`AppConfig.privacyDocument`, en `app/lib/core/config.dart` del repositorio de
 la app).
 
-**Aún no está publicado.** Se publicará con GitHub Pages desde la rama `main`
-del repositorio `cuadernin-legal`, en `https://demual.github.io/cuadernin-legal/`
-(el `PRIVACY_URL` de la build de Google Play). Antes, el agente `legal` tiene que
-revisar estos textos. Una vez publicado, el historial de commits servirá además
-como registro de qué decía la política en cada momento.
+Se publica con GitHub Pages desde la rama `main` en
+`https://demual.github.io/cuadernin-legal/` (el `PRIVACY_URL` de la build de
+Google Play). El historial de commits sirve además como registro de qué decía la
+política en cada momento.
 
 ---
 
